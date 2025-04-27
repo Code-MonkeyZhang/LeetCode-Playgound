@@ -3,20 +3,13 @@ from typing import List
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        dests = []
-        dests.append(len(nums)-1)
-        for i in reversed(range(len(nums)-1)):
+        dest = len(nums)-1
+        for i in range(len(nums)-1, -1, -1):
             num = nums[i]
-            for dest in dests:
-                if num >= dest-i:
-                    dests.append(i)
-                    break
+            if num >= dest-i:
+                dest = i
 
-        for num in dests:
-            if num == 0:
-                return True
-
-        return False
+        return dest == 0
 
 
 solution = Solution()
