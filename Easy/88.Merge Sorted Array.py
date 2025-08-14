@@ -34,22 +34,48 @@ class Solution:
         nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
         先把nums2拼接到nums1后面,然后sort nums1.
         但是这样的做法效率不够高,排序至少需要O((m+n)log(m+n))
-        更好的方法是
         
+        更好的方法是用双指针将nums1填充,这样只需要遍历一次 复杂度是 O(m+n)
         """
 
-        # p1 = m-1
-        # p2 = n-1
-        # p = m+n-1
+        """ 直观解法 """
+        # nums2_index = 0
+        
+        # for index in range(m,len(nums1)):
+        #     nums1[index] = nums2[nums2_index]
+        #     nums2_index += 1
+
+        # nums1 = nums1.sort() # 注意这里不能用sorted(nums1)
+
+
+
+        """ 双指针写法 """
+        p1 = m - 1
+        p2 = n - 1
+        p = len(nums1) - 1
+
+        """下面这个写法会导致p1是-1是仍然被访问,会造成问题"""
         # while p2 >= 0:
-        #     if nums1[p1] > nums2[p2] and p1 >= 0:
-        #         nums1[p] = nums1[p1]
-        #         p1 -= 1
-        #         p -= 1
-        #     elif nums1[p1] <= nums2[p2]:
+        #     if p1 >= 0 and nums1[p1] <= nums2[p2]:
         #         nums1[p] = nums2[p2]
         #         p2 -= 1
-        #         p -= 1
+        #     else:
+        #         nums1[p] = nums1[p1]
+        #         p1 -= 1
+            
+        #     p -= 1
+
+        """Best Answer"""
+        while p2 >= 0:
+            if p1 >= 0 and nums1[p1] > nums2[p2]:
+                nums1[p] = nums1[p1]
+                p1 -= 1
+            else:
+                nums1[p] = nums2[p2]
+                p2 -= 1
+            
+            p -= 1
+            
         
 
 
