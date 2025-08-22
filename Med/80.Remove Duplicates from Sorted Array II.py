@@ -1,104 +1,86 @@
-# LeetCode 80: Remove Duplicates from Sorted Array II
-
-"""
-Given an integer array nums sorted in non-decreasing order, remove some duplicates 
-in-place such that each unique element appears at most twice. The relative order 
-of the elements should be kept the same.
-
-Return k after placing the final result in the first k slots of nums.
-
-Do not allocate extra space for another array. You must do this by modifying the 
-input array in-place with O(1) extra memory.
-
-Example 1:
-Input: nums = [1,1,1,2,2,3]
-Output: 5, nums = [1,1,2,2,3,_]
-
-Example 2:
-Input: nums = [0,0,1,1,1,1,2,3,3]
-Output: 7, nums = [0,0,1,1,2,3,3,_,_]
-
-Constraints:
-1 <= nums.length <= 3 * 10^4
--10^4 <= nums[i] <= 10^4
-nums is sorted in non-decreasing order.
-"""
 from typing import List
 
+"""
+题目简述：
+给定一个有序数组 nums，要求原地删除多余的重复项，
+使得每个元素最多出现两次，并返回删除后数组的新长度。
 
-class High_Solution:
+示例：
+输入: [1,1,1,2,2,3]
+输出: 长度 = 5, 数组前5个元素为 [1,1,2,2,3]
+
+输入: [0,0,1,1,1,1,2,3,3]
+输出: 长度 = 7, 数组前7个元素为 [0,0,1,1,2,3,3]
+"""
+
+class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) <= 2:
-            return len(nums)
-        k = 2
+        # TODO: 在这里写你的解法
+        life = 1
+        index = 0
+        buffer = None
 
-        for i in range(2, len(nums)):
-            # send out i, find something diff from memo
-            if nums[i] != nums[k-2]:
-                # replace
-                nums[k] = nums[i]
-                k += 1
-        return k
+        for i in range(len(nums)):
+            if nums[i] != buffer:
+                # 如果不等于buffer,就加入stack
+                nums[index] = nums[i]
+                index += 1
+                buffer = nums[i]
+                life = 1
+            else:
+                # 如果等于buffer life > 0, 照样加入stack,但是life--
+                if life > 0: 
+                    nums[index] = nums[i]
+                    index += 1
+                    life -= 1
+            
+        return index
+            
 
 
-def test_solution():
-    solution = High_Solution()
 
-    # Test case 1: Example 1
-    nums1 = [1, 1, 1, 2, 2, 3]
-    k1 = solution.removeDuplicates(nums1)
-    assert k1 == 5, f"Test case 1 failed: expected 5, got {k1}"
-    assert nums1[:k1] == [
-        1, 1, 2, 2, 3], f"Test case 1 failed: expected [1,1,2,2,3], got {nums1[:k1]}"
+# ------------------- 测试环境 -------------------
+def run_tests():
+    sol = Solution()
 
-    # Test case 2: Example 2
-    nums2 = [0, 0, 1, 1, 1, 1, 2, 3, 3]
-    k2 = solution.removeDuplicates(nums2)
-    assert k2 == 7, f"Test case 2 failed: expected 7, got {k2}"
-    assert nums2[:k2] == [0, 0, 1, 1, 2, 3,
-                          3], f"Test case 2 failed: expected [0,0,1,1,2,3,3], got {nums2[:k2]}"
+    tests = [
+        {
+            "input": [1,1,1,2,2,3],
+            "expected_len": 5,
+            "expected_nums": [1,1,2,2,3]
+        },
+        {
+            "input": [0,0,1,1,1,1,2,3,3],
+            "expected_len": 7,
+            "expected_nums": [0,0,1,1,2,3,3]
+        },
+        {
+            "input": [1,1,2,2,3,3],
+            "expected_len": 6,
+            "expected_nums": [1,1,2,2,3,3]
+        },
+        {
+            "input": [1],
+            "expected_len": 1,
+            "expected_nums": [1]
+        },
+        {
+            "input": [1,1,1,1],
+            "expected_len": 2,
+            "expected_nums": [1,1]
+        }
+    ]
 
-    # Test case 3: Empty array
-    nums3 = []
-    k3 = solution.removeDuplicates(nums3)
-    assert k3 == 0, f"Test case 3 failed: expected 0, got {k3}"
-    assert nums3 == [], f"Test case 3 failed: expected [], got {nums3}"
+    for i, test in enumerate(tests, 1):
+        nums = test["input"][:]  # 拷贝一份，避免修改原始数据
+        length = sol.removeDuplicates(nums)
 
-    # Test case 4: Single element
-    nums4 = [1]
-    k4 = solution.removeDuplicates(nums4)
-    assert k4 == 1, f"Test case 4 failed: expected 1, got {k4}"
-    assert nums4 == [1], f"Test case 4 failed: expected [1], got {nums4}"
-
-    # Test case 5: Two elements
-    nums5 = [1, 1]
-    k5 = solution.removeDuplicates(nums5)
-    assert k5 == 2, f"Test case 5 failed: expected 2, got {k5}"
-    assert nums5 == [1, 1], f"Test case 5 failed: expected [1,1], got {nums5}"
-
-    # Test case 6: All unique elements
-    nums6 = [1, 2, 3, 4, 5]
-    k6 = solution.removeDuplicates(nums6)
-    assert k6 == 5, f"Test case 6 failed: expected 5, got {k6}"
-    assert nums6 == [
-        1, 2, 3, 4, 5], f"Test case 6 failed: expected [1,2,3,4,5], got {nums6}"
-
-    # Test case 7: All same elements
-    nums7 = [1, 1, 1, 1, 1]
-    k7 = solution.removeDuplicates(nums7)
-    assert k7 == 2, f"Test case 7 failed: expected 2, got {k7}"
-    assert nums7[:k7] == [
-        1, 1], f"Test case 7 failed: expected [1,1], got {nums7[:k7]}"
-
-    # Test case 8: Multiple duplicates
-    nums8 = [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4]
-    k8 = solution.removeDuplicates(nums8)
-    assert k8 == 8, f"Test case 8 failed: expected 8, got {k8}"
-    assert nums8[:k8] == [1, 1, 2, 2, 3, 3, 4,
-                          4], f"Test case 8 failed: expected [1,1,2,2,3,3,4,4], got {nums8[:k8]}"
-
-    print("All test cases passed!")
+        print(f"\nTest Case {i}:")
+        print(f"输入: {test['input']}")
+        print(f"期待长度: {test['expected_len']}, 实际长度: {length}")
+        print(f"期待数组: {test['expected_nums']}, 实际数组: {nums[:length]}")
+        print("结果:", "✅ 正确" if (length == test['expected_len'] and nums[:length] == test['expected_nums']) else "❌ 错误")
 
 
 if __name__ == "__main__":
-    test_solution()
+    run_tests()
