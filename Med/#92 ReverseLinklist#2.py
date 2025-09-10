@@ -31,22 +31,37 @@ class Solution:
 
         dummy = ListNode(0, head)
         start = dummy
-        curr = start.next
         for _ in range(left-1):
             start = start.next
-            curr = curr.next
-        end = curr.next
+
+        curr = start.next
+        next = curr.next
 
         for _ in range(right-left):
-            temp = end.next
-            end.next = curr
-            curr = end
-            end = temp
+            temp = next.next
+            next.next = curr
+            curr = next
+            next = temp
 
         temp = start.next
         start.next = curr
-        temp.next = end
+        temp.next = next
 
+        return dummy.next
+
+    # def reverseBetween(self, head, left, right):
+        dummy = ListNode(val=0,next=head)
+        prev = dummy
+        for _ in range(left-1):
+            prev = prev.next
+        
+        cur = prev.next
+        for _ in range(right - left):
+            next = cur.next
+            cur.next = next.next
+            next.next = prev.next
+            prev.next = next
+        
         return dummy.next
 
 
