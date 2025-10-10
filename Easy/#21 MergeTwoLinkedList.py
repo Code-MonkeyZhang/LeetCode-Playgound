@@ -11,16 +11,12 @@ Simple Examples:
 3) l1 = [],       l2 = [0]      ->  [0]
 """
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from typing import Optional, Iterable, List, Tuple, Any
-
-
-class ListNode:
-    def __init__(self, val: int = 0, next: Optional["ListNode"] = None):
-        self.val = val
-        self.next = next
-
-    def __repr__(self):
-        return f"ListNode({self.val})"
+from ds_utils.single_linked_list import ListNode
 
 
 # === Utilities: build & inspect linked lists ===

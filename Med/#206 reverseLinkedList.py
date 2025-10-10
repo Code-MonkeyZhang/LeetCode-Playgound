@@ -14,30 +14,31 @@ Input:  head = []
 Output: []
 """
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from ds_utils.single_linked_list import ListNode
 
-    # Utility: build list from Python list
-    @staticmethod
-    def from_list(values):
-        dummy = ListNode()
-        cur = dummy
-        for v in values:
-            cur.next = ListNode(v)
-            cur = cur.next
-        return dummy.next
 
-    # Utility: convert list to Python list
-    def to_list(self):
-        res = []
-        cur = self
-        while cur:
-            res.append(cur.val)
-            cur = cur.next
-        return res
+# Utility functions for testing
+def from_list(values):
+    dummy = ListNode()
+    cur = dummy
+    for v in values:
+        cur.next = ListNode(v)
+        cur = cur.next
+    return dummy.next
+
+
+def to_list(head):
+    res = []
+    cur = head
+    while cur:
+        res.append(cur.val)
+        cur = cur.next
+    return res
 
 
 class Solution:
@@ -48,9 +49,9 @@ class Solution:
 
 # ---------------- TESTING ENVIRONMENT ----------------
 def run_test(test_id, input_list, expected_list):
-    head = ListNode.from_list(input_list)
+    head = from_list(input_list)
     result_head = Solution().reverseList(head)
-    actual_list = result_head.to_list() if result_head else []
+    actual_list = to_list(result_head) if result_head else []
     correct = (actual_list == expected_list)
 
     print(f"Test {test_id}:")

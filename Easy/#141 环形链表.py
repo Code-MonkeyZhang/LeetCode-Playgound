@@ -17,13 +17,12 @@ How to use:
 2) Run this file. It will build multiple independent test cases (not packed into a single array),
    then print Expected vs Actual for each, plus pass/fail stats at the end.
 """
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from typing import Optional, Tuple, Callable, List
-
-
-class ListNode:
-    def __init__(self, x: int):
-        self.val = x
-        self.next: Optional["ListNode"] = None
+from ds_utils.single_linked_list import ListNode
 
 
 class Solution:
