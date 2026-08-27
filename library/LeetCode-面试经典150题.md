@@ -39,7 +39,8 @@
 ### 88. 合并两个有序数组  ·  简单
 
 **英文名：** Merge Sorted Array  
-**链接：** https://leetcode.cn/problems/merge-sorted-array/description/
+**链接：** https://leetcode.cn/problems/merge-sorted-array/description/  
+**面经出现：** 字节跳动 - Agent 开发二面（手撕）；影石创新 - AI Agent 一面（手撕）
 
 给你两个按 **非递减顺序** 排列的整数数组 `nums1` 和 `nums2`，另有两个整数 `m` 和 `n` ，分别表示 `nums1` 和 `nums2` 中的元素数目。
 
@@ -1422,7 +1423,8 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 ### 3. 无重复字符的最长子串  ·  中等
 
 **英文名：** Longest Substring Without Repeating Characters  
-**链接：** https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/
+**链接：** https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/  
+**面经出现：** 高德 - 大模型算法一面；恒生电子 - AI Agent 开发岗一面（手撕）
 
 给定一个字符串 `s` ，请你找出其中不含有重复字符的 **最长 子串** 的长度。
 
@@ -2188,7 +2190,8 @@ s 中没有子串长度为 16 并且等于 words 的任何顺序排列的连接�
 ### 56. 合并区间  ·  中等
 
 **英文名：** Merge Intervals  
-**链接：** https://leetcode.cn/problems/merge-intervals/description/
+**链接：** https://leetcode.cn/problems/merge-intervals/description/  
+**面经出现：** 陌陌 - 全栈开发笔试
 
 以数组 `intervals` 表示若干个区间的集合，其中单个区间为 `intervals[i] = [starti, endi]` 。请你合并所有重叠的区间，并返回 _一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间_ 。
 
@@ -2318,7 +2321,8 @@ s 中没有子串长度为 16 并且等于 words 的任何顺序排列的连接�
 ### 20. 有效的括号  ·  简单
 
 **英文名：** Valid Parentheses  
-**链接：** https://leetcode.cn/problems/valid-parentheses/description/
+**链接：** https://leetcode.cn/problems/valid-parentheses/description/  
+**面经出现：** Enerjoy - iOS 开发一面
 
 给定一个只包括 `'('`，`')'`，`'{'`，`'}'`，`'['`，`']'` 的字符串 `s` ，判断字符串是否有效。
 
@@ -2606,7 +2610,8 @@ minStack.getMin();   --> 返回 -2.
 ### 141. 环形链表  ·  简单
 
 **英文名：** Linked List Cycle  
-**链接：** https://leetcode.cn/problems/linked-list-cycle/description/
+**链接：** https://leetcode.cn/problems/linked-list-cycle/description/  
+**面经出现：** Enerjoy - iOS 开发一面
 
 给你一个链表的头节点 `head` ，判断链表中是否有环。
 
@@ -2996,7 +3001,8 @@ _如果链表中存在环_ ，则返回 `true` 。 否则，返回 `false` 。
 ### 146. LRU 缓存  ·  中等
 
 **英文名：** LRU Cache  
-**链接：** https://leetcode.cn/problems/lru-cache/description/
+**链接：** https://leetcode.cn/problems/lru-cache/description/  
+**面经出现：** 快手 - AI 应用开发一面（手撕，ACM 模式）
 
 请你设计并实现一个满足  [LRU (最近最少使用) 缓存](https://baike.baidu.com/item/LRU) 约束的数据结构。
 
@@ -3439,7 +3445,8 @@ struct Node {
 ### 124. 二叉树中的最大路径和  ·  困难
 
 **英文名：** Binary Tree Maximum Path Sum  
-**链接：** https://leetcode.cn/problems/binary-tree-maximum-path-sum/description/
+**链接：** https://leetcode.cn/problems/binary-tree-maximum-path-sum/description/  
+**面经出现：** 面壁智能 - 算法工程师一面
 
 二叉树中的 **路径** 被定义为一条节点序列，序列中每对相邻节点之间都存在一条边。同一个节点在一条路径序列中 **至多出现一次** 。该路径 **至少包含一个** 节点，且不一定经过根节点。
 
@@ -4510,7 +4517,8 @@ wordDictionary.search("b.."); // 返回 True
 ### 46. 全排列  ·  中等
 
 **英文名：** Permutations  
-**链接：** https://leetcode.cn/problems/permutations/description/
+**链接：** https://leetcode.cn/problems/permutations/description/  
+**面经出现：** 字节跳动 - 算法工程师一面（开场手撕）
 
 给定一个不含重复数字的数组 `nums` ，返回其 _所有可能的全排列_ 。你可以 **按任意顺序** 返回答案。
 
@@ -6053,7 +6061,8 @@ medianFinder.findMedian(); // return 2.0
 ### 300. 最长递增子序列  ·  中等
 
 **英文名：** Longest Increasing Subsequence  
-**链接：** https://leetcode.cn/problems/longest-increasing-subsequence/description/
+**链接：** https://leetcode.cn/problems/longest-increasing-subsequence/description/  
+**面经出现：** 小红书 - Agent 实习一面（手撕）
 
 给你一个整数数组 `nums` ，找到其中最长严格递增子序列的长度。
 

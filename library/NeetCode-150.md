@@ -615,7 +615,8 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 ### 16. Longest Substring Without Repeating Characters · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/  
-**链接（EN）：** https://leetcode.com/problems/longest-substring-without-repeating-characters/
+**链接（EN）：** https://leetcode.com/problems/longest-substring-without-repeating-characters/  
+**面经出现：** 高德 - 大模型算法一面；恒生电子 - AI Agent 开发岗一面（手撕）
 
 给定一个字符串 `s` ，请你找出其中不含有重复字符的 **最长 子串** 的长度。
 
@@ -809,7 +810,8 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 ### 21. Valid Parentheses · 简单
 
 **链接（CN）：** https://leetcode.cn/problems/valid-parentheses/description/  
-**链接（EN）：** https://leetcode.com/problems/valid-parentheses/
+**链接（EN）：** https://leetcode.com/problems/valid-parentheses/  
+**面经出现：** Enerjoy - iOS 开发一面
 
 给定一个只包括 `'('`，`')'`，`'{'`，`'}'`，`'['`，`']'` 的字符串 `s` ，判断字符串是否有效。
 
@@ -1395,7 +1397,8 @@ timeMap.get("foo", 5);         // 返回 "bar2"
 ### 34. Reverse Linked List · 简单
 
 **链接（CN）：** https://leetcode.cn/problems/reverse-linked-list/description/  
-**链接（EN）：** https://leetcode.com/problems/reverse-linked-list/
+**链接（EN）：** https://leetcode.com/problems/reverse-linked-list/  
+**面经出现：** 番茄小说（字节）- iOS 客户端一面（思路对未调通）；虾皮 - Agent 开发一面（手撕 + 复杂度分析）
 
 给你单链表的头节点 `head` ，请你反转链表，并返回反转后的链表。
 
@@ -1471,7 +1474,8 @@ timeMap.get("foo", 5);         // 返回 "bar2"
 ### 36. Linked List Cycle · 简单
 
 **链接（CN）：** https://leetcode.cn/problems/linked-list-cycle/description/  
-**链接（EN）：** https://leetcode.com/problems/linked-list-cycle/
+**链接（EN）：** https://leetcode.com/problems/linked-list-cycle/  
+**面经出现：** Enerjoy - iOS 开发一面
 
 给你一个链表的头节点 `head` ，判断链表中是否有环。
 
@@ -1522,7 +1526,8 @@ _如果链表中存在环_ ，则返回 `true` 。 否则，返回 `false` 。
 ### 37. Reorder List · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/reorder-list/description/  
-**链接（EN）：** https://leetcode.com/problems/reorder-list/
+**链接（EN）：** https://leetcode.com/problems/reorder-list/  
+**面经出现：** 月之暗面 - Agent 开发岗一面（数组解法被识破，考的是链表原地三步操作）
 
 给定一个单链表 `L` 的头节点 `head` ，单链表 `L` 表示为：
 
@@ -1749,7 +1754,8 @@ L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
 ### 42. LRU Cache · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/lru-cache/description/  
-**链接（EN）：** https://leetcode.com/problems/lru-cache/
+**链接（EN）：** https://leetcode.com/problems/lru-cache/  
+**面经出现：** 快手 - AI 应用开发一面（手撕，ACM 模式）
 
 请你设计并实现一个满足  [LRU (最近最少使用) 缓存](https://baike.baidu.com/item/LRU) 约束的数据结构。
 
@@ -2371,7 +2377,8 @@ lRUCache.get(4);    // 返回 4
 ### 58. Binary Tree Maximum Path Sum · 困难
 
 **链接（CN）：** https://leetcode.cn/problems/binary-tree-maximum-path-sum/description/  
-**链接（EN）：** https://leetcode.com/problems/binary-tree-maximum-path-sum/
+**链接（EN）：** https://leetcode.com/problems/binary-tree-maximum-path-sum/  
+**面经出现：** 面壁智能 - 算法工程师一面
 
 二叉树中的 **路径** 被定义为一条节点序列，序列中每对相邻节点之间都存在一条边。同一个节点在一条路径序列中 **至多出现一次** 。该路径 **至少包含一个** 节点，且不一定经过根节点。
 
@@ -2876,7 +2883,8 @@ medianFinder.findMedian(); // return 2.0
 ### 70. Permutations · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/permutations/description/  
-**链接（EN）：** https://leetcode.com/problems/permutations/
+**链接（EN）：** https://leetcode.com/problems/permutations/  
+**面经出现：** 字节跳动 - 算法工程师一面（开场手撕）
 
 给定一个不含重复数字的数组 `nums` ，返回其 _所有可能的全排列_ 。你可以 **按任意顺序** 返回答案。
 
@@ -4365,7 +4373,8 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 ### 109. Longest Increasing Subsequence · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/longest-increasing-subsequence/description/  
-**链接（EN）：** https://leetcode.com/problems/longest-increasing-subsequence/
+**链接（EN）：** https://leetcode.com/problems/longest-increasing-subsequence/  
+**面经出现：** 小红书 - Agent 实习一面（手撕）
 
 给你一个整数数组 `nums` ，找到其中最长严格递增子序列的长度。
 
@@ -5301,7 +5310,8 @@ Output: true
 ### 131. Merge Intervals · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/merge-intervals/description/  
-**链接（EN）：** https://leetcode.com/problems/merge-intervals/
+**链接（EN）：** https://leetcode.com/problems/merge-intervals/  
+**面经出现：** 陌陌 - 全栈开发笔试
 
 以数组 `intervals` 表示若干个区间的集合，其中单个区间为 `intervals[i] = [starti, endi]` 。请你合并所有重叠的区间，并返回 _一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间_ 。
 
