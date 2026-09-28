@@ -308,7 +308,7 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 
 **英文名：** Longest Substring Without Repeating Characters  
 **链接：** https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/  
-**面经出现：** 高德 - 大模型算法一面（讲思路）；恒生电子 - AI Agent 开发岗一面（手撕）
+**面经出现：** 高德 - 大模型算法一面（讲思路）；恒生电子 - AI Agent 开发岗一面（手撕）；字节跳动 - 后端开发一面（其二）（手撕）
 
 给定一个字符串 `s` ，请你找出其中不含有重复字符的 **最长 子串** 的长度。
 
@@ -545,7 +545,7 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 
 **英文名：** Merge Intervals  
 **链接：** https://leetcode.cn/problems/merge-intervals/description/  
-**面经出现：** 陌陌 - 全栈开发笔试
+**面经出现：** 陌陌 - 全栈开发笔试；途游 - Agent 开发二面（手撕）
 
 以数组 `intervals` 表示若干个区间的集合，其中单个区间为 `intervals[i] = [starti, endi]` 。请你合并所有重叠的区间，并返回 _一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间_ 。
 
@@ -1732,7 +1732,8 @@ lRUCache.get(4);    // 返回 4
 ### 98. 验证二叉搜索树 · 中等
 
 **英文名：** Validate Binary Search Tree  
-**链接：** https://leetcode.cn/problems/validate-binary-search-tree/description/
+**链接：** https://leetcode.cn/problems/validate-binary-search-tree/description/  
+**面经出现：** 虾皮 - Agent 开发一面（笔试，未做出，因此挂）
 
 给你一个二叉树的根节点 `root` ，判断其是否是一个有效的二叉搜索树。
 
@@ -2085,9 +2086,10 @@ lRUCache.get(4);    // 返回 4
 ### 994. 腐烂的橘子 · 中等
 
 **英文名：** Rotting Oranges  
-**链接：** https://leetcode.cn/problems/rotting-oranges/description/
+**链接：** https://leetcode.cn/problems/rotting-oranges/description/  
+**面经出现：** MiniMax - Agent 服务端开发二面
 
-在给定的 `m x n` 网格 `grid` 中，每个单元格可以有以下三个值之一：
+在给定的 `m x n` 网格 `grid` 中，每个单元格可以有以下三个值之一：
 
 -   值 `0` 代表空单元格；
 -   值 `1` 代表新鲜橘子；
@@ -2285,9 +2287,10 @@ trie.search("app");     // 返回 True
 ### 17. 电话号码的字母组合 · 中等
 
 **英文名：** Letter Combinations of a Phone Number  
-**链接：** https://leetcode.cn/problems/letter-combinations-of-a-phone-number/description/
+**链接：** https://leetcode.cn/problems/letter-combinations-of-a-phone-number/description/  
+**面经出现：** 字节跳动 - Agent 开发一面（手撕）
 
-给定一个仅包含数字 `2-9` 的字符串，返回所有它能表示的字母组合。答案可以按 **任意顺序** 返回。
+给定一个仅包含数字 `2-9` 的字符串，返回所有它能表示的字母组合。答案可以按 **任意顺序** 返回。
 
 给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
 
@@ -3713,7 +3716,8 @@ medianFinder.findMedian(); // return 2.0
 ### 1143. 最长公共子序列 · 中等
 
 **英文名：** Longest Common Subsequence  
-**链接：** https://leetcode.cn/problems/longest-common-subsequence/description/
+**链接：** https://leetcode.cn/problems/longest-common-subsequence/description/  
+**面经出现：** 虾皮 - Agent 开发秋招一面（手撕，未撕出）
 
 给定两个字符串 `text1` 和 `text2`，返回这两个字符串的最长 **公共子序列** 的长度。如果不存在 **公共子序列** ，返回 `0` 。
 

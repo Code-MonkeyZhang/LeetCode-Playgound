@@ -1424,7 +1424,7 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 
 **英文名：** Longest Substring Without Repeating Characters  
 **链接：** https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/  
-**面经出现：** 高德 - 大模型算法一面；恒生电子 - AI Agent 开发岗一面（手撕）
+**面经出现：** 高德 - 大模型算法一面；恒生电子 - AI Agent 开发岗一面（手撕）；字节跳动 - 后端开发一面（其二）（手撕）
 
 给定一个字符串 `s` ，请你找出其中不含有重复字符的 **最长 子串** 的长度。
 
@@ -2191,7 +2191,7 @@ s 中没有子串长度为 16 并且等于 words 的任何顺序排列的连接�
 
 **英文名：** Merge Intervals  
 **链接：** https://leetcode.cn/problems/merge-intervals/description/  
-**面经出现：** 陌陌 - 全栈开发笔试
+**面经出现：** 陌陌 - 全栈开发笔试；途游 - Agent 开发二面（手撕）
 
 以数组 `intervals` 表示若干个区间的集合，其中单个区间为 `intervals[i] = [starti, endi]` 。请你合并所有重叠的区间，并返回 _一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间_ 。
 
@@ -3842,7 +3842,8 @@ bSTIterator.hasNext(); // 返回 False
 ### 98. 验证二叉搜索树  ·  中等
 
 **英文名：** Validate Binary Search Tree  
-**链接：** https://leetcode.cn/problems/validate-binary-search-tree/description/
+**链接：** https://leetcode.cn/problems/validate-binary-search-tree/description/  
+**面经出现：** 虾皮 - Agent 开发一面（笔试，未做出，因此挂）
 
 给你一个二叉树的根节点 `root` ，判断其是否是一个有效的二叉搜索树。
 

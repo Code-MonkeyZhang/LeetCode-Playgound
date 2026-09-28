@@ -616,7 +616,7 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 
 **链接（CN）：** https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/  
 **链接（EN）：** https://leetcode.com/problems/longest-substring-without-repeating-characters/  
-**面经出现：** 高德 - 大模型算法一面；恒生电子 - AI Agent 开发岗一面（手撕）
+**面经出现：** 高德 - 大模型算法一面；恒生电子 - AI Agent 开发岗一面（手撕）；字节跳动 - 后端开发一面（其二）（手撕）
 
 给定一个字符串 `s` ，请你找出其中不含有重复字符的 **最长 子串** 的长度。
 
@@ -3401,9 +3401,10 @@ class Node {
 ### 84. Rotting Oranges · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/rotting-oranges/description/  
-**链接（EN）：** https://leetcode.com/problems/rotting-oranges/
+**链接（EN）：** https://leetcode.com/problems/rotting-oranges/  
+**面经出现：** MiniMax - Agent 服务端开发二面
 
-在给定的 `m x n` 网格 `grid` 中，每个单元格可以有以下三个值之一：
+在给定的 `m x n` 网格 `grid` 中，每个单元格可以有以下三个值之一：
 
 -   值 `0` 代表空单元格；
 -   值 `1` 代表新鲜橘子；
@@ -4504,7 +4505,8 @@ Explanation: The array cannot be partitioned into equal sum subsets.
 ### 112. Longest Common Subsequence · 中等
 
 **链接（CN）：** https://leetcode.cn/problems/longest-common-subsequence/description/  
-**链接（EN）：** https://leetcode.com/problems/longest-common-subsequence/
+**链接（EN）：** https://leetcode.com/problems/longest-common-subsequence/  
+**面经出现：** 虾皮 - Agent 开发秋招一面（手撕，未撕出）
 
 给定两个字符串 `text1` 和 `text2`，返回这两个字符串的最长 **公共子序列** 的长度。如果不存在 **公共子序列** ，返回 `0` 。
 
